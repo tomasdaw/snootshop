@@ -24,7 +24,11 @@ def load_products():
 
 def get_store_url():
     configured = os.getenv("STORE_URL", "").strip().rstrip("/")
-    if configured.startswith(("http://", "https://")):
+    if (
+        configured.startswith("https://")
+        and "localhost" not in configured
+        and "127.0.0.1" not in configured
+    ):
         return configured
     proto = request.headers.get("X-Forwarded-Proto", request.scheme)
     host = request.headers.get("X-Forwarded-Host", request.host)
