@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-badge">🎬 As seen on TikTok & Instagram</div>
+    <h1>Pet products your<br><span>furry friend will love</span></h1>
+    <p>Trendy essentials for dogs & cats — thoughtfully picked, fast shipping, and backed by thousands of happy pet parents.</p>
+    <div class="hero-cta">
+      <a href="#products" class="btn btn-primary">Shop Best Sellers</a>
+      <a href="#reviews" class="btn btn-secondary">See Reviews</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-value">50K+</div>
+        <div class="stat-label">Happy pet parents</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">4.8★</div>
+        <div class="stat-label">Average rating</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">Free</div>
+        <div class="stat-label">Shipping over $35</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="social-bar">
+  <div class="social-bar-inner">
+    <span class="social-bar-item">⭐ "My dog literally talks now" — Talking Buttons</span>
+    <span class="social-bar-item">🔥 2.3M views — Self-Cleaning Brush unboxing</span>
+    <span class="social-bar-item">📦 Free shipping on $35+</span>
+    <span class="social-bar-item">🐕 30-day happiness guarantee</span>
+    <span class="social-bar-item">⭐ "My dog literally talks now" — Talking Buttons</span>
+    <span class="social-bar-item">🔥 2.3M views — Self-Cleaning Brush unboxing</span>
+    <span class="social-bar-item">📦 Free shipping on $35+</span>
+    <span class="social-bar-item">🐕 30-day happiness guarantee</span>
+  </div>
+</div>
+
+<section class="section" id="products">
+  <div class="container">
+    <div class="section-header">
+      <h2>Shop the collection</h2>
+      <p>Hand-picked favorites for dogs and cats — the products pet parents can't stop talking about</p>
+    </div>
+    <div class="product-grid">
+      {% for product in products %}
+      <article class="product-card">
+        <a href="/product/{{ product.id }}">
+          <div class="product-image-wrap">
+            <img src="{{ product.image }}" alt="{{ product.name }}" loading="lazy">
+            <span class="product-badge">{{ product.badge }}</span>
+          </div>
+        </a>
+        <div class="product-info">
+          <div class="product-rating">
+            <span class="stars">★★★★★</span>
+            <span>{{ product.rating }} ({{ "{:,}".format(product.reviews) }})</span>
+          </div>
+          <a href="/product/{{ product.id }}">
+            <h3 class="product-name">{{ product.name }}</h3>
+          </a>
+          <p class="product-tagline">{{ product.tagline }}</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-current">${{ "%.2f"|format(product.price / 100) }}</span>
+              <span class="price-compare">${{ "%.2f"|format(product.compareAt / 100) }}</span>
+            </div>
+            <button class="add-btn" onclick="addToCart('{{ product.id }}')">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="why" style="background: var(--white);">
+  <div class="container">
+    <div class="section-header">
+      <h2>Why Snoot Shop?</h2>
+      <p>We're pet parents too — every product is tested, loved, and worth sharing</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🐾</div>
+        <h3>Pet-Parent Approved</h3>
+        <p>We only sell products we'd use with our own pets. No junk, no gimmicks — just things that actually work.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🚚</div>
+        <h3>Fast Shipping</h3>
+        <p>Orders ship within 1–2 business days and arrive in 7–12 days. Track your package every step of the way.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">↩️</div>
+        <h3>30-Day Guarantee</h3>
+        <p>Not happy? Full refund within 30 days, no questions asked. Your pet's happiness is our priority.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🔒</div>
+        <h3>Secure Checkout</h3>
+        <p>Shop with confidence. All payments are encrypted and processed securely through Stripe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="tiktok-section">
+      <div>
+        <h2>Loved by pet parents everywhere</h2>
+        <p>Our products have been featured across TikTok and Instagram — here's what customers are saying:</p>
+        <ul class="tiktok-tips">
+          <li><strong>Sarah M.</strong> — "The talking buttons changed everything. My dog presses 'outside' and 'treat' now!"</li>
+          <li><strong>James T.</strong> — "Best brush I've ever owned. The self-cleaning button is genius."</li>
+          <li><strong>Emily R.</strong> — "Paw cleaner saved my floors after rainy walks. 10/10 recommend."</li>
+          <li><strong>Mike D.</strong> — "Ordered the donut bed and my cat hasn't left it since. So cozy."</li>
+          <li><strong>Lisa K.</strong> — "Fast shipping, great packaging, and my pup loves the duck puzzle feeder."</li>
+        </ul>
+        <a href="#products" class="btn btn-primary" style="margin-top: 8px;">Shop Now</a>
+      </div>
+      <div class="tiktok-mockup">
+        <div class="mock-phone">
+          <div class="mock-screen">
+            <div class="mock-caption">
+              <strong>@snootshop</strong><br>
+              Watch my dog figure out the duck puzzle feeder 😂🐕
+            </div>
+            <div class="mock-hashtags">#dogsoftiktok #petproducts #dogmom #snootshop</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

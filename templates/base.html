@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Snoot Shop{% endblock %} — Pet Essentials</title>
+  <meta name="description" content="{% block description %}Trendy pet accessories for dogs and cats. Free shipping on orders $35+. Shop grooming, toys, travel gear and more.{% endblock %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🐾</span>
+        Snoot Shop
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/#products">Shop</a></li>
+          <li><a href="/#why">Why Us</a></li>
+          <li><a href="/#reviews">Reviews</a></li>
+        </ul>
+      </nav>
+      <button class="cart-btn" id="cart-btn">
+        <span>Cart</span>
+        <span class="cart-count hidden" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">🐾</span>
+            Snoot Shop
+          </div>
+          <p>Trendy pet essentials for dogs and cats. Every product is hand-picked because we use them with our own pets — and know yours will love them too.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="/#products">All Products</a></li>
+            <li><a href="/#products">Grooming</a></li>
+            <li><a href="/#products">Toys</a></li>
+            <li><a href="/#products">Travel</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="mailto:hello@snootshop.com">Contact Us</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Snoot Shop. All rights reserved.</span>
+        <span>Payments secured by Stripe</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="close-btn" id="close-cart">×</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span class="cart-total-label">Total</span>
+        <span class="cart-total-value" id="cart-total">$0.00</span>
+      </div>
+      <button class="checkout-btn" id="checkout-btn" disabled>Checkout</button>
+      <p class="shipping-note">Free shipping on orders over $35</p>
+    </div>
+  </div>
+
+  <script>
+    window.PRODUCTS = {{ products | tojson }};
+  </script>
+  <script src="{{ url_for('static', filename='js/store.js') }}"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

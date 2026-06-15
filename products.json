@@ -1,0 +1,166 @@
+[
+  {
+    "id": "slicker-brush",
+    "name": "Self-Cleaning Slicker Brush",
+    "tagline": "One-click fur release. No more clogged brushes.",
+    "price": 2499,
+    "compareAt": 3999,
+    "category": "grooming",
+    "badge": "TikTok Viral",
+    "rating": 4.9,
+    "reviews": 2847,
+    "image": "/static/images/products/slicker-brush-1.jpg",
+    "images": [
+      "/static/images/products/slicker-brush-1.jpg",
+      "/static/images/products/slicker-brush-2.jpg",
+      "/static/images/products/slicker-brush-3.jpg"
+    ],
+    "description": "The brush every pet parent on TikTok is obsessed with. Press the button and fur releases instantly \u2014 perfect for dogs and cats with shedding coats.",
+    "features": [
+      "One-button self-cleaning",
+      "Stainless steel bristles",
+      "Ergonomic non-slip grip",
+      "Works on all coat types"
+    ],
+    "supplierCost": 826,
+    "supplier": "CJ Dropshipping",
+    "supplierUrl": "https://cjdropshipping.com/product/self-cleaning-slicker-brush-for-dogs-cats-pets-one-click-cleaning-function-gentle-effective-cat-pet-dog-hair-remover-dog-grooming-accessories-for-small-medium-large-dogs-p-1748302991692025856.html"
+  },
+  {
+    "id": "slow-feeder",
+    "name": "Ceramic Slow Feeder Bowl",
+    "tagline": "Slows eating. Protects neck posture. Built to last.",
+    "price": 1899,
+    "compareAt": 2999,
+    "category": "feeding",
+    "badge": "Best Seller",
+    "rating": 4.8,
+    "reviews": 1923,
+    "image": "/static/images/products/slow-feeder-1.webp",
+    "images": [
+      "/static/images/products/slow-feeder-1.webp",
+      "/static/images/products/slow-feeder-2.webp",
+      "/static/images/products/slow-feeder-3.webp"
+    ],
+    "description": "Elevated ceramic design slows fast eaters and keeps your pet's neck in a comfortable position. Durable, easy to clean, and looks great in any kitchen.",
+    "features": [
+      "Premium ceramic",
+      "Neck-protection elevated design",
+      "Slow-feed interior",
+      "Non-slip base",
+      "Dishwasher safe"
+    ],
+    "supplierCost": 272,
+    "supplier": "CJ Dropshipping",
+    "supplierUrl": "https://cjdropshipping.com/product/pet-slow-food-ceramic-neck-protection-bowl-p-1706927323313868800.html"
+  },
+  {
+    "id": "water-bottle",
+    "name": "Portable Pet Water Bottle",
+    "tagline": "Walks, hikes, road trips \u2014 one-handed hydration.",
+    "price": 1599,
+    "compareAt": 2499,
+    "category": "travel",
+    "badge": "Travel Must-Have",
+    "rating": 4.8,
+    "reviews": 1456,
+    "image": "/static/images/products/water-bottle-1.jpg",
+    "images": [
+      "/static/images/products/water-bottle-1.jpg",
+      "/static/images/products/water-bottle-2.png",
+      "/static/images/products/water-bottle-3.png"
+    ],
+    "description": "Built-in bowl flips out with one squeeze. Leak-proof, BPA-free, and fits in any bag. The #1 travel accessory in every pet parent haul video.",
+    "features": [
+      "350ml capacity",
+      "One-handed operation",
+      "Leak-proof lock",
+      "Includes wrist strap"
+    ],
+    "supplierCost": 518,
+    "supplier": "CJ Dropshipping",
+    "supplierUrl": "https://cjdropshipping.com/product/creative-portable-outdoor-pet-stainless-steel-water-cup-small-dog-water-bottle-convenient-dog-drink-dispenser-puppy-travel-portable-water-bowl-pet-products-p-2602090303381624300.html"
+  },
+  {
+    "id": "paw-cleaner",
+    "name": "Paw Cleaner Cup",
+    "tagline": "Muddy paws? Solved in 10 seconds.",
+    "price": 1499,
+    "compareAt": 2299,
+    "category": "grooming",
+    "badge": "Problem Solver",
+    "rating": 4.6,
+    "reviews": 987,
+    "image": "/static/images/products/paw-cleaner-1.jpg",
+    "images": [
+      "/static/images/products/paw-cleaner-1.jpg",
+      "/static/images/products/paw-cleaner-2.jpg",
+      "/static/images/products/paw-cleaner-3.jpg"
+    ],
+    "description": "Dip, twist, dry. Soft silicone bristles inside clean every paw without stress. Before/after TikToks with this product consistently hit 100K+ views.",
+    "features": [
+      "Soft silicone bristles",
+      "Two sizes (S/M)",
+      "Quick-dry design",
+      "Top-rack dishwasher safe"
+    ],
+    "supplierCost": 224,
+    "supplier": "CJ Dropshipping",
+    "supplierUrl": "https://cjdropshipping.com/product/2-in-1-dog-paw-cleaner-cup-soft-pet-dog-foot-cleaning-washer-brush-cup-portable-pet-foot-washer-paw-clean-brush-foot-cleaning-bucket-pet-products-p-1661977359978860544.html"
+  },
+  {
+    "id": "puzzle-feeder",
+    "name": "Duck Puzzle Treat Dispenser",
+    "tagline": "Turn treat time into a brain game.",
+    "price": 2999,
+    "compareAt": 4499,
+    "category": "toys",
+    "badge": "Viral Content",
+    "rating": 4.7,
+    "reviews": 756,
+    "image": "/static/images/products/puzzle-feeder-1.jpg",
+    "images": [
+      "/static/images/products/puzzle-feeder-1.jpg",
+      "/static/images/products/puzzle-feeder-2.jpg",
+      "/static/images/products/puzzle-feeder-3.jpg"
+    ],
+    "description": "Adorable cartoon duck design turns snacks into a puzzle. Your pet works for every treat \u2014 great for slowing fast eaters, training, and hours of entertained play.",
+    "features": [
+      "Interactive treat dispenser",
+      "Anti-slip base",
+      "Cartoon duck design",
+      "Great for training",
+      "Works with kibble and small treats"
+    ],
+    "supplierCost": 564,
+    "supplier": "CJ Dropshipping",
+    "supplierUrl": "https://cjdropshipping.com/product/dog-puzzle-feeder-interactive-pet-food-treat-dispenser-cartoon-duck-design-anti-slip-pets-automatic-feeder-toys-for-dog-training-pet-products-p-2502181058121618100.html"
+  },
+  {
+    "id": "talking-buttons",
+    "name": "Talking Pet Button Set (4-Pack)",
+    "tagline": "Teach your pet to 'talk.' Break the internet.",
+    "price": 3799,
+    "compareAt": 4999,
+    "category": "toys",
+    "badge": "Instagram Famous",
+    "rating": 4.8,
+    "reviews": 1890,
+    "image": "/static/images/products/talking-buttons-1.webp",
+    "images": [
+      "/static/images/products/talking-buttons-1.webp",
+      "/static/images/products/talking-buttons-2.webp",
+      "/static/images/products/talking-buttons-3.webp"
+    ],
+    "description": "Record custom words on each button. Pets learn to press them to communicate. Bunny and dog 'talking' videos get millions of views \u2014 this is your ticket in.",
+    "features": [
+      "Record & re-record easily",
+      "4 color-coded buttons",
+      "Non-slip base pads",
+      "Batteries included"
+    ],
+    "supplierCost": 2128,
+    "supplier": "CJ Dropshipping",
+    "supplierUrl": "https://cjdropshipping.com/product/4-colors-pet-communication-button-one-click-prevent-physical-inactivity-recordable-dog-talking-button-toy-cat-toy-pet-products-p-1569931892764454912.html"
+  }
+]

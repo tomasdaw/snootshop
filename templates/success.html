@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="result-page">
+  <div class="result-card">
+    <div class="result-icon">🎉</div>
+    <h1>Order confirmed!</h1>
+    <p>Thank you for shopping at Snoot Shop. You'll receive a confirmation email shortly. Your pet is going to love this.</p>
+    {% if session_id %}
+    <p style="font-size:0.8rem;color:var(--warm-gray);">Order ref: {{ session_id[:20] }}...</p>
+    {% endif %}
+    <a href="/" class="btn btn-primary">Continue Shopping</a>
+  </div>
+</section>
+<script>
+  localStorage.removeItem("snoot_cart");
+</script>
+{% endblock %}
