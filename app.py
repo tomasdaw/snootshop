@@ -22,6 +22,15 @@ def load_products():
         return json.load(f)
 
 
+def get_store_url():
+    configured = os.getenv("STORE_URL", "").strip().rstrip("/")
+    if configured.startswith(("http://", "https://")):
+        return configured
+    proto = request.headers.get("X-Forwarded-Proto", request.scheme)
+    host = request.headers.get("X-Forwarded-Host", request.host)
+    return f"{proto}://{host}".rstrip("/")
+
+
 def get_product(product_id):
     return next((p for p in load_products() if p["id"] == product_id), None)
 
@@ -84,6 +93,7 @@ def create_checkout_session():
     if not items:
         return jsonify({"error": "Cart is empty"}), 400
 
+    store_url = get_store_url()
     line_items = []
     for item in items:
         product = get_product(item["id"])
@@ -97,7 +107,7 @@ def create_checkout_session():
                     "product_data": {
                         "name": product["name"],
                         "description": product["tagline"],
-                        "images": [product["image"]],
+                        "images": [f"{store_url}{product['image']}"],
                     },
                     "unit_amount": product["price"],
                 },
@@ -110,8 +120,8 @@ def create_checkout_session():
             payment_method_types=["card"],
             line_items=line_items,
             mode="payment",
-            success_url=f"{STORE_URL}/success?session_id={{CHECKOUT_SESSION_ID}}",
-            cancel_url=f"{STORE_URL}/cancel",
+            success_url=f"{store_url}/success?session_id={{CHECKOUT_SESSION_ID}}",
+            cancel_url=f"{store_url}/cancel",
             shipping_address_collection={"allowed_countries": ["US", "CA", "GB", "AU"]},
             phone_number_collection={"enabled": True},
         )
