@@ -83,30 +83,31 @@
   },
   {
     "id": "paw-cleaner",
-    "name": "Paw Cleaner Cup",
-    "tagline": "Muddy paws? Solved in 10 seconds.",
-    "price": 1499,
-    "compareAt": 2299,
+    "name": "Electric Paw Cleaner Cup",
+    "tagline": "Add water, press go — muddy paws cleaned automatically.",
+    "price": 2999,
+    "compareAt": 4499,
     "category": "grooming",
     "badge": "Problem Solver",
-    "rating": 4.6,
-    "reviews": 987,
-    "image": "/static/images/products/paw-cleaner-1.jpg",
+    "rating": 4.7,
+    "reviews": 1124,
+    "image": "/static/images/products/paw-cleaner-1.webp",
     "images": [
-      "/static/images/products/paw-cleaner-1.jpg",
-      "/static/images/products/paw-cleaner-2.jpg",
-      "/static/images/products/paw-cleaner-3.jpg"
+      "/static/images/products/paw-cleaner-1.webp",
+      "/static/images/products/paw-cleaner-2.webp",
+      "/static/images/products/paw-cleaner-3.webp"
     ],
-    "description": "Dip, twist, dry. Soft silicone bristles inside clean every paw without stress. Before/after TikToks with this product consistently hit 100K+ views.",
+    "description": "USB-rechargeable automatic paw washer for dogs and cats. Soft silicone bristles spin to lift mud and dirt in seconds — perfect for after-walk cleanups and TikTok before/afters.",
     "features": [
+      "Electric auto-spin cleaning",
       "Soft silicone bristles",
-      "Two sizes (S/M)",
-      "Quick-dry design",
-      "Top-rack dishwasher safe"
+      "USB rechargeable battery",
+      "Sizes for small and large paws",
+      "Detachable cup for easy rinse"
     ],
-    "supplierCost": 224,
+    "supplierCost": 2495,
     "supplier": "CJ Dropshipping",
-    "supplierUrl": "https://cjdropshipping.com/product/2-in-1-dog-paw-cleaner-cup-soft-pet-dog-foot-cleaning-washer-brush-cup-portable-pet-foot-washer-paw-clean-brush-foot-cleaning-bucket-pet-products-p-1661977359978860544.html"
+    "supplierUrl": "https://cjdropshipping.com/product/dog-foot-artifact-machine-electric-pet-cat-foot-cleaner-cup-p-1356602786053230592.html"
   },
   {
     "id": "puzzle-feeder",
